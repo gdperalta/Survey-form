@@ -361,9 +361,7 @@ input[type=submit] {
         border: solid white 1px;
     }
 
-label:hover {
-    text-decoration: underline;
-}
+
 
 #row {
     display: flex;
@@ -380,6 +378,7 @@ label:hover {
     padding-left:30px; /* free space for custom radio button */
     cursor: pointer;
     font-size: .9vw;
+    
   }
   /* hide default radio button  */
   .custom-radio input[type=radio] {
@@ -473,4 +472,6 @@ label:hover {
     transform: rotate(45deg);
   }
 
-  
+  .custom-checkbox:hover, .custom-radio:hover {
+    text-decoration: underline;
+  }
