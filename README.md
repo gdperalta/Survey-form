@@ -1,6 +1,6 @@
 # Survey-form
 ## Survey form using only HTML and CSS
 
-![Home Page](Image/homepage.png)
+![Home Page](/Images/homepage.png)
 
-![Survey form](Image/Survey-form.png)
+![Survey form](/Images/Survey-form.png)
