@@ -1,0 +1,397 @@
+<html id="main">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="homepage">
+            <div id="homepage-container">
+                <h1 id="title">What kind of gamer are you?</h1>
+                <p id="description">Fill out the form below so that we can recommend games suited for your taste</p>
+                <div id="getstarted">
+                    <a href="#first">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <form  action="thankyou.html" id="survey-form" method="get">
+            <div id="row">
+                <div class="webpage" id="first">
+                    <div id=first-container>
+                        <div id="personal-info-container">
+                            <div class="indiv-info">
+                                <label id="name-label">Name:<br>
+                                    <input type="text" id="name" placeholder="Your Full Name" required>                            
+                                </label> 
+                            </div>
+                            <div class="indiv-info">
+                                <label id="age-label">Age:<br>  
+                                    <input type="text" pattern="[0-9]{1,2}" id="age" placeholder="Your Age"  required >
+                                </label>
+                            </div>  
+                            <div class="indiv-info">
+                                <label id="email-label">Email:<br> 
+                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" placeholder="Your Best Email Address" title="Invalid Email Address Format" required>
+                                </label>
+                            </div>   
+                            <div class="indiv-info">
+                                <label id="number-label">Number:<br>
+                                    <input type="text" pattern="[0][9]([0-9]){9}" id="number" placeholder="e.g 09XXXXXXXXX" required >
+                                </label> 
+                            </div>  
+                            <div class="indiv-info">
+                                <p>Gender:</p>
+                                <label class="custom-radio" for="gender-male">Male
+                                    <input type="radio" name="gender" id="gender-male" value="male">
+                                    <span></span>
+                                </label>
+                                <label class="custom-radio" for="gender-female">Female
+                                    <input type="radio" name="gender" id="gender-female" value="female">
+                                    <span></span>
+                                </label>
+                            </div>
+                        </div>                        
+                        <div class="previousnext">   
+                            <span></span>
+                            <a href="#second" class="next">Next</a>   
+                        </div>                  
+                    </div>
+                </div>
+
+                <div class="webpage" id="second">
+                    <div class="container">
+                        <div>
+                            <p>1. What genres do you usually enjoy playing? (Select all that apply)</p>
+                            <div id="checkbox-genre">
+                                <div class="column-checkbox">
+                                    <div>
+                                        <label class="custom-checkbox" for="adventure">Adventure
+                                            <input type="checkbox" name="genre" id="adventure" value="adventure">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="action">Action
+                                            <input type="checkbox" name="genre" id="action" value="action">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="logic">Logic
+                                            <input type="checkbox" name="genre" id="logic" value="logic">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="arcade">Arcade
+                                            <input type="checkbox" name="genre" id="arcade" value="arcade">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="mmorpg">MMORPG
+                                            <input type="checkbox" name="genre" id="mmorpg" value="mmorpg">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="column-checkbox">
+                                    <div>
+                                        <label class="custom-checkbox" for="rpg">RPG
+                                            <input type="checkbox" name="genre" id="rpg" value="rpg">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="simulator">Simulator
+                                            <input type="checkbox" name="genre" id="simulator" value="simulator">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="sports">Sports
+                                            <input type="checkbox" name="genre" id="sports" value="sports">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="strategy">Strategy
+                                            <input type="checkbox" name="genre" id="strategy" value="strategy">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="competitive">Competitive
+                                            <input type="checkbox" name="genre" id="competitive" value="competitive">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="previousnext">
+                        <a href="#first" class="previous">Previous</a>
+                        <a href="#third" class="next">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webpage" id="third">
+                    <div class="container">
+                        <div>
+                            <p>2. How do you prefer to acquire video games?</p>
+                            <label class="custom-radio" for=acqPhysical>I buy games in stores
+                                <input type="radio" name="game-acquisition" id="acqPhysical" value="physical">
+                                <span></span>
+                            </label>
+                            <label class="custom-radio" for=acqOnline>I buy and download them online
+                                <input type="radio" name="game-acquisition" id="acqOnline" value="online">
+                                <span></span>
+                            </label>
+                            <label class="custom-radio" for=acqRent>I rent games
+                                <input type="radio" name="game-acquisition" id="acqRent" value="rent">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="previousnext">
+                            <a href="#second" class="previous">Previous</a>
+                            <a href="#fourth" class="next">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webpage" id="fourth">
+                    <div class="container">
+                        <div>
+                            <p>3. Which platform do you prefer to play games on? (Select all that apply)</p>
+                            <label class="custom-checkbox" for="playstation">Playstation
+                                <input type="checkbox" name="platform" id="playstation" value="ps">
+                                <span></span>
+                            </label>
+                            <label class="custom-checkbox" for="nintendo-switch">Nintendo Switch
+                                <input type="checkbox" name="platform" id="nintendo-switch" value="switch">
+                                <span></span>
+                            </label>
+                            <label class="custom-checkbox" for="xbox">Xbox
+                                <input type="checkbox" name="platform" id="xbox" value="xBox">
+                                <span></span>
+                            </label>   
+                            <label class="custom-checkbox" for="computer">PC              
+                                <input type="checkbox" name="platform" id="computer" value="pc">
+                                <span></span>
+                            </label>   
+                            <label class="custom-checkbox" for="mobile-phone">Android/Iphone               
+                                <input type="checkbox" name="platform" id="mobile-phone" value="mobile">
+                                <span></span>
+                            </label>
+                            <br>                        
+                            <label>Others:<br>
+                                <input type="text" id="other-platforms" placeholder="Type other platforms you play on here";>
+                            </label>
+                        </div>
+                        <div class="previousnext">
+                            <a href="#third" class="previous">Previous</a>
+                            <a href="#fifth" class="next">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webpage" id="fifth">
+                    <div id="fifth-container">
+                        <div id="games-container">
+                            <p>4. What games have you played in the last 2 months? (Select all that apply)</p>
+                            <div id="checkbox-games">
+                                <div class="column-checkbox">
+                                    <div>
+                                        <label class="custom-checkbox" for="witcher">The Witcher
+                                            <input type="checkbox" name="recently-played" id="witcher" value="witcher">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="redempt">Red Dead Redemption
+                                            <input type="checkbox" name="recently-played" id="redempt" value="redempt">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="cod">Call of Duty
+                                            <input type="checkbox" name="recently-played" id="cod" value="cod">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="cyberpunk">Cyberpunk 2077
+                                            <input type="checkbox" name="recently-played" id="cyberpunk" value="cyberpunk">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="god-of-war">God of War
+                                            <input type="checkbox" name="recently-played" id="god-of-war" value="god-of-war">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="last-of-us">The Last of Us
+                                            <input type="checkbox" name="recently-played" id="last-of-us" value="last-of-us">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="nier">Nier: Automata
+                                            <input type="checkbox" name="recently-played" id="nier" value="nier">
+                                            <span></span>
+                                        </label>
+                                    </div>                        
+                                </div>
+                                <div class="column-checkbox">
+                                    <div>
+                                        <label class="custom-checkbox" for="sin-creed">Assassin’s Creed
+                                            <input type="checkbox" name="recently-played" id="sin-creed" value="sin-creed">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="mons-hunter">Monster Hunter
+                                            <input type="checkbox" name="recently-played" id="mons-hunter" value="mons-hunter">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="botw">Legend of Zelda: Breath of the Wild
+                                            <input type="checkbox" name="recently-played" id="botw" value="botw">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="persona">Persona
+                                            <input type="checkbox" name="recently-played" id="persona" value="persona">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="genshin">Genshin Impact
+                                            <input type="checkbox" name="recently-played" id="genshin" value="genshin">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="ml">Mobile Legends
+                                            <input type="checkbox" name="recently-played" id="ml" value="ml">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="dota">Dota
+                                            <input type="checkbox" name="recently-played" id="dota" value="dota">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="column-checkbox">
+                                    <div>
+                                        <label class="custom-checkbox" for="lol">League of Legends
+                                            <input type="checkbox" name="recently-played" id="lol" value="lol">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="overwatch">Overwatch
+                                            <input type="checkbox" name="recently-played" id="overwatch" value="overwatch">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="valorant">Valorant
+                                            <input type="checkbox" name="recently-played" id="valorant" value="valorant">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="pokemon">Pokemon Unite
+                                            <input type="checkbox" name="recently-played" id="pokemon" value="pokemon">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="coc">Clash of Clans
+                                            <input type="checkbox" name="recently-played" id="coc" value="coc">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="fortnite">Fortnite
+                                            <input type="checkbox" name="recently-played" id="fortnite" value="fortnite">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="custom-checkbox" for="minecraft">Minecraft
+                                            <input type="checkbox" name="recently-played" id="minecraft" value="minecraft">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="previousnext">
+                            <a href="#fourth" class="previous">Previous</a>
+                            <a href="#sixth" class="next">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webpage" id="sixth">
+                    <div class="container">
+                        <div>
+                            <label for="dropdown">5. How much do you spend on games per year?</label>
+                            <br><br>
+                            <select name="spendings" id="dropdown">
+                                <option value="less1000">PHP 0 - 1,000</option>
+                                <option value="l000-5000">PHP 1,001 - 5,000</option>
+                                <option value="5001-10000">PHP 5,001 - 10,000</option>
+                                <option value="1000more">PHP 10,000 or more</option>
+                            </select>
+                            <br>
+                            <p>6. How often do you play video games?</p>
+                            <label class="custom-radio" for=daily>Daily
+                                <input type="radio" name="frequency" id="daily" value="daily">
+                                <span></span>
+                            </label>
+                            <label class="custom-radio" for=four-six>4 to 6 times a week
+                                <input type="radio" name="frequency" id="four-six" value="four-six">
+                                <span></span>
+                            </label> 
+                            <label class="custom-radio" for=two-three>2 to 3 times a week
+                                <input type="radio" name="frequency" id="two-three" value="two-three">
+                                <span></span>
+                            </label> 
+                            <label class="custom-radio" for=rarely>Rarely
+                                <input type="radio" name="frequency" id="rarely" value="rarely">
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="previousnext">
+                            <a href="#fifth" class="previous">Previous</a>
+                            <a href="#seventh" class="next">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="webpage" id="seventh">
+                    <div class="container">
+                        <div>
+                            <label for="comments">Share some games you've fully enjoyed and loved. What made you enjoy them?</label>
+                            <textarea name="comments" id="comments"></textarea>
+                        </div>
+                        <div class="previousnext">
+                            <a href="#sixth" class="previous">Previous</a>
+                            <input type="submit" value="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </form>
+    </body>
+</html>
